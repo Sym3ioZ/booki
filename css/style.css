@@ -1,0 +1,524 @@
+/* Header with logo on the left and the nav menu on the right */
+
+.logo
+{
+    height: 50px;
+    padding-left: 10px;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a
+{
+    padding: 37px 15px 10px 15px;
+}
+
+.menu a:hover                             /* Changing effect on hover */
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/* search block with form and filters */
+
+.search-block
+{
+    margin: 0px 45px 10px 45px;
+}
+
+.form-block
+{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    /* position: relative; */
+}
+
+
+.form-block > i                                /* font icon ahead of the search area */
+{
+    background-color: #F2F2F2;
+    height: 50px;
+    width: 40px;
+    border-radius: 17px 0 0 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search                                      /* custom search area */
+{
+    border: 0 hidden;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: large;
+    height: 50px;
+    width: auto;
+    position: relative; 
+}
+
+#search-button                              /* custom search button */
+{
+    border: 0 hidden;
+    border-radius: 0 17px 17px 0;
+    background-color: #0065FC;
+    color: white;
+    width: 130px;
+    height: 50px;
+    position: relative;
+}
+
+#search-button span
+{
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+    color: white;
+}
+
+#search-button i
+{
+    display: none;
+    color: white;
+    position: absolute;
+    right: 17px;
+    bottom: 16px;
+    font-size: medium;
+}
+
+#search-button:hover                       /* shows hand pointer on hover */
+{
+    cursor: pointer;
+}
+
+#search-button:active                      /* changing effect by clicking the search button */
+{
+    background-color: #DEEBFF;
+}
+
+#search-button:active span, #search-button:active i
+{
+    color: #0065FC;
+}
+
+/* filter buttons with changing effect on hover */
+
+.filters
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+}
+
+.filter-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.filters p
+{
+    margin-right: 50px;
+    padding-top: 14px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.button-text
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;                          /* set to relative in order to place the font icon on the left (see further) */
+    margin: 0 5px 20px 5px;
+}
+
+.button-text a
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #DDDDDD;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    margin-right: 30px;
+    padding-left: 35px;
+    padding-right: 15px;
+    font-weight: 800;
+}
+
+.button-text i
+{
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 100% 100%;
+    border: 3px solid #DEEBFF;
+    position: absolute;                             /* setting the position of this font icon on the left of the filter button */
+    left: -25px;                                    /* Negative to set over the border of the button and "replace" it */
+}
+
+.button-text a:hover                                /* changing effect (bg color and text color) on hover */
+{
+    background-color: #0065FC;
+    color: white;
+}
+
+/* line with info under the filter buttons */
+
+.info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info i
+{
+    font-size: smaller;
+    color: #0065FC;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100% 100%;
+    border: 1.5px solid #dddddd;
+    margin-right: 20px;
+    padding: 12px;
+}
+
+/* main content with 2 sections */
+
+.main-content
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 10px 0 10px;
+}
+
+/* hotels section */
+
+#hotels
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+    width: 66%;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+.cards-hotels
+{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+
+.col-cards a                                     /* setting the cards (column style) */
+{
+    width: 300px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 10px #ebecec, 4px -4px 10px #ebecec, -4px 4px 10px #ebecec, -4px -4px 10px #ebecec;
+    position: relative;                         /* setting relative to place the text on the bottom of the card (see further) */
+    margin-bottom: 30px;
+}
+
+.col-cards a img
+{
+    border-radius: 20px 20px 0px 0px;
+    width: auto;
+    height: 64%;
+    object-fit: cover;
+}
+
+.col-cards-text
+{
+    position: absolute;                       /* set to absolute in order to place this text on the bottom of the card */
+    bottom: 0;
+    background-color: white;
+    width: auto;
+    border-radius: 0 0 20% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.col-cards-text p
+{
+    font-size: 15px;
+}
+
+.rate-stars                                /* rating stars */
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.star-full i                              /* full star (blue color) stands for 1 */
+{
+    font-size: small;
+    color: #0065FC;
+}
+
+.star-empty i                             /* empty star (color light grey) stands for 0 */
+{
+    font-size: small;
+    color: #dddddd;
+}
+
+.col-cards a:hover                        /* changing effect (border shadow color) on hover */
+{
+    box-shadow: 4px 4px 10px #DEEBFF, 4px -4px 10px #DEEBFF, -4px 4px 10px #DEEBFF, -4px -4px 10px #DEEBFF;
+}
+
+.col-cards a:hover h4                     /* changing effect (hotel name color) on hover */
+{
+    color: #0065FC;
+}
+
+.more
+{
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.more :hover
+{
+    color: #0065FC;
+}
+
+/* popular section */
+
+#popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #F2F2F2;
+    width: 31%;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px; 
+}
+
+.pop-title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-title i
+{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.row-cards a                                /* same card system, but row style */
+{
+    width: auto;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 10px #ebecec, 4px -4px 10px #ebecec, -4px 4px 10px #ebecec, -4px -4px 10px #ebecec;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.row-cards a img
+{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.row-cards-text
+{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    border-radius: 0 20% 20% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px 30px 10px 25px;
+}
+
+.row-cards-text p
+{
+    font-size: 15px;
+}
+
+.row-cards a:hover
+{
+    box-shadow: 4px 4px 10px #DEEBFF, 4px -4px 10px #DEEBFF, -4px 4px 10px #DEEBFF, -4px -4px 10px #DEEBFF;
+}
+
+.row-cards a:hover h4
+{
+    color: #0065FC;
+}
+
+/* Activities, last section */
+
+#activities
+{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+
+.cards-activities
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: auto;
+    height: fit-content;
+    padding: 20px 0 20px 0;
+}
+
+.cards-activities .col-cards a              /* using the col-cards class defined in the hotels section */
+{
+    width: 350px;
+    height: 550px;
+}
+
+.cards-activities .col-cards a img
+{
+    height: 88%;
+}
+
+.cards-activities .col-cards-text
+{
+    padding: 0 0 10px 20px;
+}
+
+.double-card                               /* used to place 2 cards in the second block */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+}
+
+.double-card .col-cards:first-child
+{
+    height: 55%;
+}
+
+.double-card .col-cards:last-child
+{
+    height: 37%;
+}
+
+.double-card a:first-child
+{
+    height: 100%;
+}
+
+.double-card a:last-child
+{
+    height: 100%;
+}
+
+.double-card .col-cards .hicard
+{
+    height: 78%;
+}
+
+.double-card .col-cards .locard 
+{
+    height: 66.5%;
+}
+
+.double-card-reverse .double-card              /* inverting the dimensions of the 2 cards in the 4th (last) block */
+{
+    flex-direction: column-reverse;
+}
+
+/* Footer block */
+
+.footer-content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+}
+
+.footer-block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-block h4
+{
+    padding-bottom: 20px;
+}
+
+.footer-block ul li
+{
+    padding-bottom: 10px;
+}
+
+.footer-block a:hover
+{
+    color: #0065FC;
+}

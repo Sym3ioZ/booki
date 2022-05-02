@@ -1,0 +1,260 @@
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px)    /* responsive design for mobile devices */
+{
+                /* global */
+    h1
+    {
+        font-size: 22px;
+    }
+
+    h2
+    {
+        font-size: 16px;
+    }
+
+    b
+    {
+        font-weight: 600;
+    }
+
+    h3
+    {
+        font-size: 22px;
+    }
+
+    h4
+    {
+        font-size: 16px;
+    }
+
+                /* header */
+    
+    header
+    {
+        margin: 0;
+    }
+
+    nav
+    {
+        height: 140px;
+        flex-direction: column;
+        padding: 0 0 20px 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .logo
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .menu
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu li 
+    {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px 26px 10px;
+    }
+
+    .menu a
+    {
+        width: auto;
+        padding: 0 10px 20px 10px;
+        margin: 0;
+    }
+
+    .menu a:hover
+    {
+        border-top: 0;
+    }
+
+    .menu li:hover
+    
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+
+                /* search block */
+
+    .search-block
+    {
+        margin: 0 15px 0 15px;
+    }
+
+    .filters
+    {
+        flex-direction: column;
+    }
+
+    .button-text a
+    {
+        margin-right: 0;
+    }
+
+    .button-text
+    {
+        margin: 010px 20px 0px;
+    }
+
+    .form-block
+    {
+        width: 100%;
+    }
+
+    form
+    {
+        width: 100%;
+    }
+
+    #search
+    {
+        width: 96%;
+    }
+
+    .form-block > i 
+    {
+        font-size: large;
+    }
+
+    #search-button 
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 17px 17px 17px 17px;
+        position: absolute;
+        right: 10px;
+    }
+
+    #search-button span
+    {
+        display: none;         /* hides the text in the search button */
+    }
+
+    #search-button i           /* displays the glass icon in the search button */
+    {
+        display: block;
+    }
+
+                /* main content */
+
+    main 
+    {
+        margin: 0;
+    }
+
+    .main-content
+    {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #hotels
+    {
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .col-cards
+    {
+        width: 100%;
+    }
+
+    .col-cards a 
+    {
+        width: auto;
+    }
+
+    #popular
+    {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #activities
+    {
+        margin: 0;
+        padding: 0 30px 20px 30px;
+    }
+
+    .cards-activities .col-cards a    
+    {
+        width: 100%;
+        height: 230px;
+    }
+
+    .cards-activities .col-cards a img 
+    {
+        height: 75%;
+    }
+
+    .double-card  
+    {
+        height: 490px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .double-card .col-cards:first-child
+    {
+        height: 230px;
+    }
+
+    .double-card .col-cards:last-child
+    {
+        height: 230px;
+    }
+
+    .double-card a:first-child
+    {
+        height: 100%;
+    }
+
+    .double-card a:last-child
+    {
+        height: 100%;
+    }
+
+    .double-card .col-cards .hicard
+    {
+        height: 75%;
+    }
+
+    .double-card .col-cards .locard 
+    {
+        height: 75%;
+    }
+
+    .double-card-reverse
+    {
+        width: 100%;
+    }
+
+    .double-card-reverse .double-card     
+    {
+        flex-direction: column-reverse;
+    }
+
+                /* footer */
+
+    footer 
+    {
+        padding: 40px 30px;
+    }
+    
+    .footer-content
+    {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .footer-block
+    {
+        margin-bottom: 15px;
+    }
+}
